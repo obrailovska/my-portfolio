@@ -112,6 +112,9 @@ img {
   width: 100%;
   object-fit: cover;
 }
+section {
+  margin-top: 8rem;
+}
 
 /*  MEDIA QUERIES MEDIUM SCREEN */
 
@@ -119,9 +122,9 @@ img {
   .container {
     width: var(--container-width-md);
   }
-}
-section {
-  margin-top: 6rem;
+  section {
+    margin-top: 8rem;
+  }
 }
 
 /*  MEDIA QUERIES SMALL SCREEN */
@@ -130,7 +133,10 @@ section {
   .container {
     width: var(--container-width-sm);
   }
-}
-section > h2 {
-  margin-bottom: 2rem;
+  section {
+    margin-top: 2rem;
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }
