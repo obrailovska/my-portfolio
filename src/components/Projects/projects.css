@@ -6,11 +6,12 @@
 
 .portfolio-item {
   background: var(--color-white);
-  color: white;
+  color: rgb(54, 69, 79);
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  box-shadow: 5px 5px rgb(211, 211, 211);
 }
 .portfolio-item:hover {
   border-color: var(--color-bg-variant);
@@ -32,6 +33,12 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+#git-btn {
+  border-color: rgb(54, 69, 79);
+  color: rgb(54, 69, 79);
+}
+
+/*  MEDIA QUERIES MEDIUM SCREEN */
 
 @media screen and (max-width: 1024px) {
   .portfolio-container {

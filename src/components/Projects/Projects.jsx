@@ -65,7 +65,7 @@ const Projects = () => {
               </div>
               <h3>{title}</h3>
               <div className="portfolio-item-cta">
-                <a href={github} className="btn" target="_blank">
+                <a href={github} id="git-btn" className="btn" target="_blank">
                   GitHub
                 </a>
                 <a href={demo} className="btn btn-primary" target="_blank">

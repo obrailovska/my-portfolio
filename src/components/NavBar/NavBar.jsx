@@ -4,7 +4,7 @@ import "./navbar.css";
 import { RiHome3Line } from "react-icons/ri";
 import { BiUser } from "react-icons/bi";
 import { AiOutlineProject } from "react-icons/ai";
-import { RiServiceLine } from "react-icons/ri";
+import { TbAlbum } from "react-icons/tb";
 import { AiOutlineMail } from "react-icons/ai";
 
 const NavBar = () => {
@@ -26,19 +26,20 @@ const NavBar = () => {
         <BiUser />
       </a>
       <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+      >
+        <TbAlbum />
+      </a>
+      <a
         href="#projects"
         onClick={() => setActiveNav("#projects")}
         className={activeNav === "#projects" ? "active" : ""}
       >
         <AiOutlineProject />
       </a>
-      <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
-      >
-        <RiServiceLine />
-      </a>
+
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}

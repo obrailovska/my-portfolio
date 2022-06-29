@@ -4,7 +4,7 @@ import { CgCheckO } from "react-icons/cg";
 
 function Experience() {
   return (
-    <section id="experirience">
+    <section id="experience">
       <h5>Skills</h5>
       <h2>My Experience</h2>
 
