@@ -1,7 +1,8 @@
 # React Portfolio
 This is a portfolio built with React.js. This application is fully responsive and mobile friendly.
 
-## [Click] (https://obrailovska.github.io/my-portfolio/) to view deployed application.
+## Live Demo
+https://obrailovska.github.io/my-portfolio/
 
 ## Technologies Used
 - React.js
