@@ -1,5 +1,5 @@
 footer {
-  background: rgb(192, 192, 192);
+  background: var(--color-primary);
   padding: 3rem 0;
   margin-top: 7rem;
   text-align: center;
@@ -8,7 +8,7 @@ footer {
 }
 
 footer a {
-  color: rgb(131, 137, 150);
+  color: rgb(54, 69, 79);
 }
 footer a:hover {
   color: whitesmoke;
@@ -37,8 +37,9 @@ footer a:hover {
 }
 
 .footer-socials a {
-  background-color: rgb(54, 69, 79);
-  color: white;
+  font-size: 2rem;
+  background-color: var(--color-primary);
+  color: rgb(54, 69, 79);
   padding: 0.8rem;
   border-radius: 0.7rem;
   display: flex;
@@ -47,5 +48,16 @@ footer a:hover {
 
 .footer-socials a:hover {
   background: transparent;
-  color: rgb(54, 69, 79);
+}
+
+/*  MEDIA QUERIES SMALL SCREEN */
+
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer-socials {
+    margin-bottom: 2.6rem;
+  }
 }
