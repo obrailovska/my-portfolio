@@ -1,10 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./contact.css";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,7 +34,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section id="contact">
+    <section data-aos="fade-up" id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 

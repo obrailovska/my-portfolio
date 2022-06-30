@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import ME from "../../assets/avatar/me2.jpg";
 import { MdComputer } from "react-icons/md";
 import { TiSocialFlickr } from "react-icons/ti";
 import { MdOutlineLanguage } from "react-icons/md";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <section id="about">
+    <section data-aos="fade-up" id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about_container">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./projects.css";
 import Airport from "../../assets/projects/airport-info-search.png";
 import Budget from "../../assets/projects/budget-tracker.jpg";
@@ -6,6 +6,9 @@ import IMS from "../../assets/projects/ims.jpg";
 import PetStore from "../../assets/projects/petstore.png";
 import Password from "../../assets/projects/password.png";
 import RunBuddy from "../../assets/projects/run-buddy.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const data = [
   {
     id: 1,
@@ -51,8 +54,12 @@ const data = [
   },
 ];
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <section id="projects">
+    <section data-aos="flip-left" id="projects">
       <h5>Recent Projects</h5>
       <h2>Portfolio</h2>
 
