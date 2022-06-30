@@ -5,7 +5,7 @@ import Budget from "../../assets/projects/budget-tracker.jpg";
 import IMS from "../../assets/projects/ims.jpg";
 import PetStore from "../../assets/projects/petstore.png";
 import Password from "../../assets/projects/password.png";
-import RunBuddy from "../../assets/projects/run-buddy.jpg";
+import Portfolio from "../../assets/projects/portfolio.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -47,10 +47,10 @@ const data = [
   },
   {
     id: 6,
-    image: RunBuddy,
-    title: "Run Buddy",
-    github: "https://github.com/obrailovska/run-buddy",
-    demo: "https://obrailovska.github.io/run-buddy/",
+    image: Portfolio,
+    title: "React Portfolio",
+    github: "https://github.com/obrailovska/my-portfolio",
+    demo: "https://obrailovska.github.io/my-portfolio/",
   },
 ];
 const Projects = () => {
